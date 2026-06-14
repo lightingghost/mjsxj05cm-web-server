@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - '*'
+  workflow_dispatch:
 
 env:
   isNightly: ${{ contains(github.ref, 'dev') }}
